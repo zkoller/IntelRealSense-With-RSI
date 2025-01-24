@@ -1,0 +1,48 @@
+#To Install, use the following command in the python command terminal. 
+#pip install -r PATHHERE
+#PATHHERE is where this requirements.txt file is
+#Example if your python terminal is pointed to this folder's main directory:
+#pip install -r requirements.txt
+#if your python terminal is not pointed at this folder's main directory, you can use the command cd to change it.
+
+# Libraries here may be redundant, however the list is abundant to try to avoid errors
+
+open3d
+pandas
+numpy<=2.0
+opencv-python
+
+#noted specifically in o3d documentation
+#This is a different wrapper than the main pyrealsense sdk
+pyrealsense2
+
+# From Open3D-main/python/requirements.txt
+docutils==0.20.1
+furo==2023.9.10
+jinja2==3.1.3
+m2r2==0.3.3.post2
+matplotlib==3.7.3
+nbsphinx==0.9.3
+sphinx==7.1.2
+nbconvert==6.5.4
+lxml[html_clean]==5.2.1
+
+# From other requirements.txt files in the o3d library
+wheel==0.38.4
+yapf==0.30.0
+clang-format==10.0.1.1
+pytest==7.1.2
+pytest-randomly==3.8.0
+scipy==1.10.1
+tensorboard==2.13.0
+oauthlib==3.2.2
+certifi==2024.7.4
+# These may be needed for jupyter functionality
+#jupyter_packaging
+#jupyterlab
+
+#There were found missing in misc o3d py files, but not listed in requirements
+tqdm
+tabulate
+nvidia-smi
+pyquaternion
